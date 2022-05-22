@@ -3,19 +3,18 @@
   --title-text-color: #212121;
   --accent-colour: #2196f3;
   --white-text-colour: #ffffff;
+  --bg-page-colour: #ffffff;
+  --bg-button-hover: #188ce8;
+  --bg-button-portfolio: #f5f4fa;
 }
 body {
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  background-color: var(--bg-page-colour);
 }
 
-.page {
-  background-color: #e5e5e5;
-}
-.page-header {
-  background-color: #ffffff;
-}
+/* хэдер */
 .logo {
   color: var(--title-text-color);
   font-family: Raleway, sans-serif;
@@ -67,6 +66,7 @@ ul {
 .site-nav .link.current {
   color: var(--accent-colour);
 }
+
 /* страница герой */
 .hero-page {
   /* color: #FFFFFF; */
@@ -81,6 +81,7 @@ ul {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
+/* кнопка */
 .hero-button {
   font-weight: 700;
   font-size: 16px;
@@ -90,6 +91,18 @@ ul {
   letter-spacing: 0.06em;
   cursor: pointer;
 }
+
+.hero-button {
+  color: #ffffff;
+  background-color: var(--accent-colour);
+  cursor: pointer;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--bg-button-hover);
+}
+
 /* ключевые компетенции */
 .prefences-title {
   font-weight: 700;
@@ -103,7 +116,7 @@ ul {
   line-height: 1.71;
 }
 
-/* страница чем мы занимаемся*/
+/* чем мы занимаемся*/
 .prefences-title,
 .about-title,
 .our-team-title {
@@ -112,9 +125,10 @@ ul {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+  letter-spacing: 0.03em;
 }
 
-/* страница наша команда */
+/* наша команда */
 .our-team {
   background-color: #f5f4fa;
 }
@@ -132,13 +146,6 @@ ul {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
-}
-
-/* кнопка */
-.hero-button {
-  color: #ffffff;
-  background-color: var(--accent-colour);
-  cursor: pointer;
 }
 
 /* футер */
@@ -163,9 +170,13 @@ ul {
   text-decoration: none;
   letter-spacing: 0.03em;
 }
-.logo:hover {
+
+.logo-1:hover,
+.futer .link:hover,
+.futer .link:focus {
   color: var(--accent-colour);
 }
+
 .futer a {
   text-decoration: none;
   font-style: normal;
@@ -192,20 +203,30 @@ ul {
 }
 
 /* страница портфолио */
-.hero-button {
+.portfolio-main {
+  background-color: var(--white-text-colour);
+}
+
+.main-list button {
+  color: var(--title-text-color);
+  background-color: var(--bg-button-portfolio);
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.main-list button:hover,
+.main-list button:focus {
   color: var(--white-text-colour);
   background-color: var(--accent-colour);
-  font-family: "Roboto";
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
 }
 a {
   text-decoration: none;
+}
+.main-list-projects-items {
+  background-color: var(--white-text-colour);
 }
 .main-project-name {
   color: var(--title-text-color);
