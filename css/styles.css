@@ -6,9 +6,11 @@
   --bg-page-colour: #ffffff;
   --bg-button-hover: #188ce8;
   --bg-button-portfolio: #f5f4fa;
+  --futer-mail-tel: rgba(255, 255, 255, 0.6)
 }
 body {
   font-family: "Roboto", sans-serif;
+  font-size: 14px;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   background-color: var(--bg-page-colour);
@@ -43,7 +45,6 @@ ul {
 .site-nav a {
   color: var(--title-text-color);
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   text-decoration: none;
 }
@@ -51,7 +52,6 @@ ul {
 .header-contacts a {
   color: var(--primary-text-color);
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   text-decoration: none;
 }
@@ -85,7 +85,7 @@ ul {
 .hero-button {
   font-weight: 700;
   font-size: 16px;
-  line-height: 1, 87;
+  line-height: 1.87;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
@@ -93,7 +93,7 @@ ul {
 }
 
 .hero-button {
-  color: #ffffff;
+  color: var(--bg-page-colour);
   background-color: var(--accent-colour);
   cursor: pointer;
 }
@@ -105,19 +105,19 @@ ul {
 
 /* ключевые компетенции */
 .prefences-title {
+    color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 .prefences p {
-  font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
 }
 
 /* чем мы занимаемся*/
-.prefences-title,
 .about-title,
 .our-team-title {
   color: var(--title-text-color);
@@ -130,7 +130,7 @@ ul {
 
 /* наша команда */
 .our-team {
-  background-color: #f5f4fa;
+  background-color: var(--bg-button-portfolio);
 }
 .our-team-list {
   background-color: var(--white-text-colour);
@@ -143,7 +143,6 @@ ul {
   line-height: 1.18;
 }
 .our-team p {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
 }
@@ -184,21 +183,15 @@ ul {
 
 .futer-adress a {
   color: var(--white-text-colour);
-  font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
 }
 
 .futer-mail a {
-  color: rgba(255, 255, 255, 0.6);
-  font-weight: 400;
-  font-size: 14px;
+  color: var(--futer-mail-tel)
   line-height: 1.71;
 }
 .futer-tel a {
-  color: rgba(255, 255, 255, 0.6);
-  font-weight: 400;
-  font-size: 14px;
+  color: var(--futer-mail-tel)
   line-height: 1.71;
 }
 
@@ -237,7 +230,6 @@ a {
 }
 .main-project-group {
   color: var(--primary-text-color);
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
